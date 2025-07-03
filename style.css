@@ -1,0 +1,100 @@
+body {
+    background-color: rgb(135, 133, 133);
+    margin: 0;
+    font-family: sans-serif;
+}
+
+.navbar {
+    border-radius: 0%;
+}
+
+.navbar h1 {
+    font-size: 30px;
+    color: beige;
+    padding-left: 10px;
+}
+
+.container {
+    background-color: snow;
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.textplace {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.textplace label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+#qrcode {
+    width: 200px;
+    height: 200px;
+    display: none;
+}
+
+#imgbox.show-image #qrcode {
+    display: block;
+}
+
+.btn {
+    transition: 0.25s;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: white;
+    background-color: green;
+    box-shadow: 2px 2px 5px black;
+}
+
+.footer p {
+    text-align: center;
+    color: white;
+    margin-top: 50px;
+}
+
+/* Dark Mode */
+body.dark {
+    background-color: #222;
+    color: #eee;
+}
+
+body.dark .container {
+    background-color: #333;
+    color: #eee;
+}
+
+body.dark .form-control {
+    background-color: #444;
+    color: #fff;
+    border: 1px solid #666;
+}
+
+.btn-dark {
+    background-color: #444;
+    color: #fff;
+}
+
+#dropArea.dragover {
+    background-color: #ddd;
+    border-color: #666;
+}
